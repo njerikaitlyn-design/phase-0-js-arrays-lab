@@ -1,12 +1,12 @@
 // Write your code here
-let products = ['Laptop', 'phone', 'headphones', 'monitor'];
+let products = ['Laptop', 'Phone', 'Headphones', 'Monitor'];
 
 function logFirstProduct() {
   console.log(products[0]);
 }
 
-function addProduct(product) {
-  products.push(product);
+function addProduct(productName) {
+  products.push(productName);
 }
 
 function updateProductName(index, newName) {
@@ -16,6 +16,11 @@ function updateProductName(index, newName) {
 function removeLastProduct() {
   products.pop();
 }
+logFirstProduct(); // Logs 'Laptop'
+addProduct('Keyboard');
+updateProductName(1, 'Smartphone');
+removeLastProduct();
+
 
 // Export the necessary parts for testing
 module.exports = {
